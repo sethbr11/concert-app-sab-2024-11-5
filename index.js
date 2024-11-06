@@ -18,7 +18,7 @@ app.get("/",(req,res) => {
  .select()
  .from("venues")
  .then((result) => {
-  let html = "<body><ul>";
+  let html = "<body><h1>Hello There</h1><br /><ul>";
   for (let i=0; i < result.length; i++) {
     html += "<li>" + result[i].location + "</li>";
   }
