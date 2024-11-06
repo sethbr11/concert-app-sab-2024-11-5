@@ -23,7 +23,7 @@ app.get("/",(req,res) => {
     html += "<li>" + result[i].location + "</li>";
   }
   html += "</ul></body>"
-  res.send(result);
+  res.send(html);
  });
 });
 app.listen(3000);
